@@ -19,7 +19,12 @@ class LoginViewController: UIViewController {
     }
 
     @IBAction func loginButtonTapped(_ sender: Any) {
-        #warning("Fill in this function to check for the username \"user\" and password \"password\", then perform a segue with identifier ShowWelcomeScreen.")
+        let correctUsername = usernameTextField.text == "user"
+        let correctPassword = passwordTextField.text == "password"
+        
+        if correctUsername && correctPassword {
+            performSegue(withIdentifier: "ShowWelcomeScreen", sender: nil)
+        }
     }
     
 }
