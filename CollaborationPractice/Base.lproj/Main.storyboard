@@ -85,7 +85,60 @@
                     <view key="view" contentMode="scaleToFill" id="mcL-8y-ZlM">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZRg-Ra-Kns">
+                                <rect key="frame" x="134" y="60" width="146" height="41"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="34"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What would you like to do?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bD2-tI-Bfo">
+                                <rect key="frame" x="104.5" y="161" width="205" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="5S8-e5-FMq">
+                                <rect key="frame" x="81" y="257" width="252" height="30"/>
+                                <state key="normal" title="Find out more about Digital Flagship!"/>
+                                <connections>
+                                    <action selector="digitalFlagshipButtonTapped:" destination="nx5-HT-HNe" eventType="touchUpInside" id="NRx-dI-nko"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WZx-4k-yOG">
+                                <rect key="frame" x="116" y="327" width="182" height="30"/>
+                                <state key="normal" title="Find out more about Swift!"/>
+                                <connections>
+                                    <action selector="swiftButtonTapped:" destination="nx5-HT-HNe" eventType="touchUpInside" id="E35-4a-7bs"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wVz-GE-OUA">
+                                <rect key="frame" x="192" y="467" width="30" height="30"/>
+                                <state key="normal" title="Exit"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YnF-jU-jfG">
+                                <rect key="frame" x="57" y="397" width="300" height="30"/>
+                                <state key="normal" title="Find out more about the Mobile Design Lab!"/>
+                                <connections>
+                                    <action selector="mobileDesignLabButtonTapped:" destination="nx5-HT-HNe" eventType="touchUpInside" id="j8L-fw-LRb"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="bD2-tI-Bfo" firstAttribute="centerX" secondItem="mcL-8y-ZlM" secondAttribute="centerX" id="A2n-NE-qtD"/>
+                            <constraint firstItem="WZx-4k-yOG" firstAttribute="centerX" secondItem="mcL-8y-ZlM" secondAttribute="centerX" id="BgR-wd-FXS"/>
+                            <constraint firstItem="wVz-GE-OUA" firstAttribute="top" secondItem="YnF-jU-jfG" secondAttribute="bottom" constant="40" id="Bu6-vB-N2R"/>
+                            <constraint firstItem="5S8-e5-FMq" firstAttribute="top" secondItem="bD2-tI-Bfo" secondAttribute="bottom" constant="75" id="Oyg-Nu-4Yc"/>
+                            <constraint firstItem="YnF-jU-jfG" firstAttribute="top" secondItem="WZx-4k-yOG" secondAttribute="bottom" constant="40" id="PIQ-mZ-YiS"/>
+                            <constraint firstItem="bD2-tI-Bfo" firstAttribute="top" secondItem="ZRg-Ra-Kns" secondAttribute="bottom" constant="60" id="VHz-hJ-qM8"/>
+                            <constraint firstItem="WZx-4k-yOG" firstAttribute="top" secondItem="5S8-e5-FMq" secondAttribute="bottom" constant="40" id="YiE-4Q-b7l"/>
+                            <constraint firstItem="ZRg-Ra-Kns" firstAttribute="top" secondItem="UrH-FC-LUA" secondAttribute="top" constant="60" id="Yni-yM-grO"/>
+                            <constraint firstItem="wVz-GE-OUA" firstAttribute="centerX" secondItem="mcL-8y-ZlM" secondAttribute="centerX" id="rQr-7G-g3D"/>
+                            <constraint firstItem="5S8-e5-FMq" firstAttribute="centerX" secondItem="mcL-8y-ZlM" secondAttribute="centerX" id="uDY-Mi-NZZ"/>
+                            <constraint firstItem="YnF-jU-jfG" firstAttribute="centerX" secondItem="mcL-8y-ZlM" secondAttribute="centerX" id="vms-Zc-kQa"/>
+                            <constraint firstItem="ZRg-Ra-Kns" firstAttribute="centerX" secondItem="mcL-8y-ZlM" secondAttribute="centerX" id="wFW-6L-UDS"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="UrH-FC-LUA"/>
                     </view>
                     <navigationItem key="navigationItem" id="cCh-bs-8eQ"/>

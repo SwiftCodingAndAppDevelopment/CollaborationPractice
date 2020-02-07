@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SafariServices
 
 class WelcomeViewController: UIViewController {
 
@@ -16,15 +17,27 @@ class WelcomeViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func digitalFlagshipButtonTapped(_ sender: Any) {
+        if let url = URL(string: "https://digitalflagship.osu.edu/") {
+            presentSafari(with: url)
+        }
     }
-    */
-
+    
+    @IBAction func mobileDesignLabButtonTapped(_ sender: Any) {
+        if let url = URL(string: "https://digitalflagship.osu.edu/get-involved/mobile-design-lab") {
+            presentSafari(with: url)
+        }
+    }
+    
+    @IBAction func swiftButtonTapped(_ sender: Any) {
+        if let url = URL(string: "https://digitalflagship.osu.edu/swift-coding-and-app-development-certificate") {
+            presentSafari(with: url)
+        }
+    }
+    
+    func presentSafari(with url: URL) {
+        let safariViewController = SFSafariViewController(url: url)
+        
+        present(safariViewController, animated: true, completion: nil)
+    }
 }
